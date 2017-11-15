@@ -1,49 +1,36 @@
-// $(#option).on(clickButton () {
-//   alert("You clicked a button")
-// })
 
-// $(document).buttons( function() {
-//   $('#option').onclick('click', clickButton() {
-//     alert("You clicked")
-//   })
-// })
+$('.option1').click( function() {
+  alert( "Option1" );
+});
 
-// function clickButton() {
-//   var id = this.id
+$( ".option2" ).click(function() {
+  alert( "Option2" );
+});
+
+$( ".option3" ).click(function() {
+  alert( "Option3" );
+});
+
+$( ".option4" ).click(function() {
+  alert( "Option4" );
+});
+
+$( ".option5" ).click(function() {
+  alert( "Option5" );
+});
+
+$( ".option6" ).click(function() {
+  alert( "Option6" );
+});
+
+$( ".option7" ).click(function() {
+  alert( "Option7" );
+});
+
+$( ".option8" ).click(function() {
+  alert( "Option8" );
+});
+
+// for (var i = 0; i < buttons.length; i++) {
+//   buttons[i].addEventListener('click', false);
 // }
-
-$( "#option" ).click(function() {
-  alert( "Handler for .click() called." );
-});
-
-$( "#option2" ).click(function() {
-  alert( "Handler for .click() called." );
-});
-
-$( "#option3" ).click(function() {
-  alert( "Handler for .click() called." );
-});
-
-$( "#option4" ).click(function() {
-  alert( "Handler for .click() called." );
-});
-
-$( "#option5" ).click(function() {
-  alert( "Handler for .click() called." );
-});
-
-$( "#option6" ).click(function() {
-  alert( "Handler for .click() called." );
-});
-
-$( "#option7" ).click(function() {
-  alert( "Handler for .click() called." );
-});
-
-$( "#option8" ).click(function() {
-  alert( "Handler for .click() called." );
-});
-
-for (var i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener('click', false);
-}
