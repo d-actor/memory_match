@@ -100,9 +100,10 @@ images
 */
 
 .choice_image {
-  height: 80px;
+  height: 90px;
   border-radius: 2%;
   margin-top: 5px;
+  display: block;
 }
 
 .choice_back1 {
