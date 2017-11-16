@@ -104,6 +104,14 @@ images
   margin-top: 5px;
 }
 
+.choice_back {
+  display: none;
+}
+
+.choice_display {
+  display: block;
+}
+
 /*
 tables
 */
