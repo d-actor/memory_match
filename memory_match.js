@@ -1,7 +1,5 @@
-// If both items don't match, hide the values again and alert the user
-// Alert the user that they won once that matched all the items on the board
-
 var userChoices = []
+var winCounter = []
 
 $('.option1').click( function() {
   $('.option1').css("display", "none")
@@ -167,6 +165,10 @@ function evalChoices(userChoices) {
   if (userChoices[0] === userChoices[1]) {
   alert('Match! Yeeeeeeeeah bud.')
   userChoices.length = 0
+  winCounter.push(1)
+  if(winCounter.length === 8){
+    alert("You WON!!! Refresh page to play again.")
+  }
   } else {
   $('.option' + userChoices[0]).css("display", "block");
   $('.option' + userChoices[1]).css("display", "block");
@@ -176,7 +178,7 @@ function evalChoices(userChoices) {
   $('.choice_back' + userChoices[1]).css("display", "none");
   $('.choice_back' + userChoices[0] + '2').css("display", "none");
   $('.choice_back' + userChoices[1] + '2').css("display", "none");
-  alert("No dice my dude, try it again or don't")
+  alert("No luck my dude, try again or don't.")
   userChoices.length = 0
   }
 };
