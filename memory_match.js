@@ -1,4 +1,3 @@
-// If both items match, alert the user and keep showing those cards
 // If both items don't match, hide the values again and alert the user
 // Alert the user that they won once that matched all the items on the board
 
@@ -11,7 +10,7 @@ $('.option1').click( function() {
   if(userChoices.length === 2) {
   evalChoices(userChoices)
   }
-  console.log(userChoices)
+  // console.log(userChoices)
 });
 
 $('.option12').click( function() {
@@ -21,7 +20,7 @@ $('.option12').click( function() {
   if(userChoices.length === 2) {
   evalChoices(userChoices)
   }
-  console.log(userChoices)
+  // console.log(userChoices)
 });
 
 $( ".option2" ).click(function() {
@@ -31,7 +30,7 @@ $( ".option2" ).click(function() {
   if(userChoices.length === 2) {
   evalChoices(userChoices)
   }
-  console.log(userChoices)
+  // console.log(userChoices)
 });
 
 $( ".option22" ).click(function() {
@@ -41,7 +40,7 @@ $( ".option22" ).click(function() {
   if(userChoices.length === 2) {
   evalChoices(userChoices)
   }
-  console.log(userChoices)
+  // console.log(userChoices)
 });
 
 $( ".option3" ).click(function() {
@@ -51,7 +50,7 @@ $( ".option3" ).click(function() {
   if(userChoices.length === 2) {
   evalChoices(userChoices)
   }
-  console.log(userChoices)
+  // console.log(userChoices)
 });
 
 $( ".option32" ).click(function() {
@@ -61,7 +60,7 @@ $( ".option32" ).click(function() {
   if(userChoices.length === 2) {
   evalChoices(userChoices)
   }
-  console.log(userChoices)
+  // console.log(userChoices)
 });
 
 $( ".option4" ).click(function() {
@@ -71,7 +70,7 @@ $( ".option4" ).click(function() {
   if(userChoices.length === 2) {
   evalChoices(userChoices)
   }
-  console.log(userChoices)
+  // console.log(userChoices)
 });
 
 $( ".option42" ).click(function() {
@@ -81,7 +80,7 @@ $( ".option42" ).click(function() {
   if(userChoices.length === 2) {
   evalChoices(userChoices)
   }
-  console.log(userChoices)
+  // console.log(userChoices)
 });
 
 $( ".option5" ).click(function() {
@@ -91,7 +90,7 @@ $( ".option5" ).click(function() {
   if(userChoices.length === 2) {
   evalChoices(userChoices)
   }
-  console.log(userChoices)
+  // console.log(userChoices)
 });
 
 $( ".option52" ).click(function() {
@@ -101,7 +100,7 @@ $( ".option52" ).click(function() {
   if(userChoices.length === 2) {
   evalChoices(userChoices)
   }
-  console.log(userChoices)
+  // console.log(userChoices)
 });
 
 $( ".option6" ).click(function() {
@@ -111,7 +110,7 @@ $( ".option6" ).click(function() {
   if(userChoices.length === 2) {
   evalChoices(userChoices)
   }
-  console.log(userChoices)
+  // console.log(userChoices)
 });
 
 $( ".option62" ).click(function() {
@@ -121,7 +120,7 @@ $( ".option62" ).click(function() {
   if(userChoices.length === 2) {
   evalChoices(userChoices)
   }
-  console.log(userChoices)
+  // console.log(userChoices)
 });
 
 $( ".option7" ).click(function() {
@@ -131,7 +130,7 @@ $( ".option7" ).click(function() {
   if(userChoices.length === 2) {
   evalChoices(userChoices)
   }
-  console.log(userChoices)
+  // console.log(userChoices)
 });
 
 $( ".option72" ).click(function() {
@@ -141,7 +140,7 @@ $( ".option72" ).click(function() {
   if(userChoices.length === 2) {
   evalChoices(userChoices)
   }
-  console.log(userChoices)
+  // console.log(userChoices)
 });
 
 $( ".option8" ).click(function() {
@@ -151,7 +150,7 @@ $( ".option8" ).click(function() {
   if(userChoices.length === 2) {
   evalChoices(userChoices)
   }
-  console.log(userChoices)
+  // console.log(userChoices)
 });
 
 $( ".option82" ).click(function() {
@@ -161,7 +160,7 @@ $( ".option82" ).click(function() {
   if(userChoices.length === 2) {
   evalChoices(userChoices)
   }
-  console.log(userChoices)
+  // console.log(userChoices)
 });
 
 function evalChoices(userChoices) {
@@ -169,16 +168,15 @@ function evalChoices(userChoices) {
   alert('Match! Yeeeeeeeeah bud.')
   userChoices.length = 0
   } else {
+  $('.option' + userChoices[0]).css("display", "block");
+  $('.option' + userChoices[1]).css("display", "block");
+  $('.option' + userChoices[0] + '2').css("display", "block");
+  $('.option' + userChoices[1] + '2').css("display", "block");
+  $('.choice_back' + userChoices[0]).css("display", "none");
+  $('.choice_back' + userChoices[1]).css("display", "none");
+  $('.choice_back' + userChoices[0] + '2').css("display", "none");
+  $('.choice_back' + userChoices[1] + '2').css("display", "none");
   alert("No dice my dude, try it again or don't")
   userChoices.length = 0
   }
 };
-
-// $(document).on('click' ) function(){
-//   if(userChoices.length === 2) {
-//   evalChoices(userChoices)
-//   }
-// }
-// $(document).on('click', '.remove', function() {
-//   alert('Button clicked');
-// });
