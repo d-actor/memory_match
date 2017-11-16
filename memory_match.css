@@ -63,6 +63,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 40px;
+  font-weight: 500;
 }
 
 h2 {
@@ -104,7 +105,68 @@ images
   margin-top: 5px;
 }
 
-.choice_back {
+.choice_back1 {
+  padding-top: 20px;
+  display: none;
+}
+.choice_back12 {
+  padding-top: 20px;
+  display: none;
+}
+.choice_back2 {
+  padding-top: 20px;
+  display: none;
+}
+.choice_back22 {
+  padding-top: 20px;
+  display: none;
+}
+.choice_back3 {
+  padding-top: 20px;
+  display: none;
+}
+.choice_back32 {
+  padding-top: 20px;
+  display: none;
+}
+.choice_back4 {
+  padding-top: 20px;
+  display: none;
+}
+.choice_back42 {
+  padding-top: 20px;
+  display: none;
+}
+.choice_back5 {
+  padding-top: 20px;
+  display: none;
+}
+.choice_back52 {
+  padding-top: 20px;
+  display: none;
+}
+.choice_back6 {
+  padding-top: 20px;
+  display: none;
+}
+.choice_back62 {
+  padding-top: 20px;
+  display: none;
+}
+.choice_back7 {
+  padding-top: 20px;
+  display: none;
+}
+.choice_back72 {
+  padding-top: 20px;
+  display: none;
+}
+.choice_back8 {
+  padding-top: 20px;
+  display: none;
+}
+.choice_back82 {
+  padding-top: 20px;
   display: none;
 }
 
@@ -126,6 +188,8 @@ button {
   background: #000;
   color: #fff;
 	display: inline-block;
+  justify-content: center;
+  align-items: center;
 	margin: 0;
 	text-align: center;
   border: 0px solid #000;
