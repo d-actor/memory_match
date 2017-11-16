@@ -1,6 +1,7 @@
 
 $('.option1').click( function() {
-  alert( "Option1" );
+  $('.option1').css("display", "none")
+  $('.choice_back').css("display", "block");
 });
 
 $( ".option2" ).click(function() {
