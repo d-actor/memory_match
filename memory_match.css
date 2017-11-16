@@ -62,7 +62,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
 }
 
@@ -100,7 +100,7 @@ images
 */
 
 .choice_image {
-  height: 100px;
+  height: 80px;
   border-radius: 2%;
   margin-top: 5px;
 }
@@ -173,12 +173,6 @@ images
 .choice_display {
   display: block;
 }
-
-/*
-tables
-*/
-
-
 
 /*
 buttons

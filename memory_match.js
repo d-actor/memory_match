@@ -161,13 +161,25 @@ $( ".option82" ).click(function() {
   // console.log(userChoices)
 });
 
+$( "#reset" ).click(function() {
+  alert(".....Reset.....")
+  $('h1').css("display", "none")
+  $('img').css("display", "block")
+  if (winCounter.length !== 0){
+      winCounter.length = 0
+    }
+  });
+
 function evalChoices(userChoices) {
   if (userChoices[0] === userChoices[1]) {
   alert('Match! Yeeeeeeeeah bud.')
   userChoices.length = 0
   winCounter.push(1)
   if(winCounter.length === 8){
-    alert("You WON!!! Refresh page to play again.")
+    alert("You WON!!! Play again and stuff.")
+    $('h1').css("display", "none")
+    $('img').css("display", "block")
+    winCounter.length = 0
   }
   } else {
   $('.option' + userChoices[0]).css("display", "block");
